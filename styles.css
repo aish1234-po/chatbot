@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://botnation.ai/site/wp-content/uploads/2024/01/chatbot-restaurant.webp'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+#chat-container {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #cccccc04;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chat-log {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #e1ffc7;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-message img {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+#input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 80px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+} 
+
+#chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+#chat-box::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
