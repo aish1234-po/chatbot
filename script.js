@@ -3,11 +3,11 @@ function sendMessage() {
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
 
-    displayMessage(userInput, 'user-message', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOHtqsQizwi4syQ1AyhMVid6SO78Nfdd-meQ&s'); // Add user icon
+    displayMessage(userInput, 'user-message', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOHtqsQizwi4syQ1AyhMVid6SO78Nfdd-meQ&s'); 
     document.getElementById('user-input').value = '';
 
     const botResponse = getBotResponse(userInput);
-    setTimeout(() => displayMessage(botResponse.message, botResponse.className, 'https://cdn-icons-png.flaticon.com/512/1698/1698535.png'), 500); // Add bot icon
+    setTimeout(() => displayMessage(botResponse.message, botResponse.className, 'https://cdn-icons-png.flaticon.com/512/1698/1698535.png'), 500); 
 }
 
 function displayMessage(message, className, iconSrc) {
