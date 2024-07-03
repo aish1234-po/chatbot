@@ -1,4 +1,4 @@
-/// script.js
+
 function sendMessage() {
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
